@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <div class="container">
+    <div class="title"></div>
+    <div class="content">
+      <div class = background>
+      </div>
+      <div class = "logo">
+          <a href = "https://www.instagram.com/saic_tiet/">
+          <img src="../static/saic_white.png" height="100px" width="120px" >
+          <img src="../static/exordiumlogo.png" height="100" >
+          </a>
+      
+      </div>
+      <div class="wrapper">
+        <div class="title">
+            Register for Exordium 2K23
+        </div>
+      <form method="POST" action="{% url 'join' %}">
+        {% csrf_token %}
+        <div class="form">
+          <div class="inputfield">
+            <label>First Name</label>
+        </div>  
+        <input type="text" class="input" placeholder="First name" name="Fname1" required>
+            <div class="inputfield">
+            <label>Last Name</label>
+        </div>
+        <input type="text" class="input" placeholder="Last name" name="Lname1"required>
+    
+        <div class="inputfield">
+            <label>Contact Number</label>
+        </div>  
+        <input maxlength="10" minlength="10" type="number" class="input" placeholder="Contact Number" name="Phone1" required>
+    
+        <div class="inputfield">
+            <label>Roll Number</label>
+        </div>  
+        <input maxlength="9" type="number" class="input" placeholder="Roll Number" name="Roll1" required>
+    
+        <div class="inputfield">
+            <label>College Email</label>
+        </div> 
+        <input type="email" class="input" placeholder="College Email" name="Email1" required>
+    
+        <div class="inputfield">
+            <label>Partner's First Name</label>
+        </div>  
+        <input type="text" class="input" placeholder="Partner's First name" name="Fname2" required>
+    
+        <div class="inputfield">
+            <label>Partner's Last Name</label>
+        </div>  
+        <input type="text" class="input" placeholder="Partner's Last name" name="Lname2" required>
+    
+        
+        <div class="inputfield">
+          <label>Partner's Contact Number</label>
+        </div>  
+        <input maxlength="10" minlength="10" type="number" class="input" placeholder="Partner's Contact Number" name="Phone2" required>
+        
+        <div class="inputfield">
+            <label>Partner's Roll Number</label>
+        </div>
+        <input type="number" class="input" placeholder="Partner's Roll Number" name="Roll2" required>
+
+        <div class="inputfield">
+            <label>Partner's College Email</label>
+        </div> 
+        <input type="email" class="input" placeholder="Partner's College Email" name="Email2" required>
+    
+        <div class="inputfield">
+            <label> If you could bring any fictional character to the alumni-freshers event, who would it be and why?</label>
+        </div>
+        <textarea maxlength="300" class="textarea" name="Q1"></textarea>
+    
+        <div class="inputfield">
+            <label>If you could teleport to any city in the world for a day, where would you go and why?</label>
+        </div>
+        <textarea maxlength="300" class="textarea" name="Q2"></textarea>
+    
+        </div>
+        
+        <div class="inputfield">
+          
+          <input type="submit" value="Register" class="button">
+        </div>
+      </form>
+    </div>
+ 
+    
+{% endblock %}
+

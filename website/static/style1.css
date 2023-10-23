@@ -1,0 +1,62 @@
+
+.background {
+    background-image: url(bg.png);
+    background-size: cover;
+    
+
+
+}
+
+.text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.div {
+    position: relative;
+    width: fit-content;
+    font-family: "SF Pro-Regular", Helvetica;
+    font-weight: 10;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.group{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top : 50px;
+    max-width: 500px;
+    width: 100%;
+    background:  rgba(0,0,0,0.3);
+    margin: 15px auto;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.125); 
+    padding: 30px;
+}
+.para{
+    color: #ffffff;
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top : 50px;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+}
+
+.logo{
+    text-align: center;
+    padding-top:20px ;
+    }
